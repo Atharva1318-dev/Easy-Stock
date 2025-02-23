@@ -1,4 +1,4 @@
-import "../Dashboard/stock.css";
+import "./stock.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 

@@ -1,4 +1,4 @@
-import "../Dashboard/stock.css";
+import "./stock.css";
 import { useState, useEffect } from "react";
 import axios, { all } from "axios";
 import { VerticalChart } from "./VerticalChart";
