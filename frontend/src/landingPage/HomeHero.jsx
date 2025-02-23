@@ -74,7 +74,7 @@ export default function HomeHero({ username }) {
                 {/* Image Column */}
                 <div className="col-12 col-lg-8 order-1 order-lg-2">
                     <img
-                        src=".https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296097/newHome_wiaspn.jpg"
+                        src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296097/newHome_wiaspn.jpg"
                         alt="Hero Image"
                         className="img-fluid w-100 h-auto"
                         style={{
