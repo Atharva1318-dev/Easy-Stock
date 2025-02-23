@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="col-12 col-md-6 col-lg-3">
                         <Link href="/" className="d-block">
                             <img
-                                src="../src/assets/newLogo.png"
+                                src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png"
                                 alt="Easy Stock Logo"
                                 className="bg-white p-2 custom-rounded"
                                 style={{ height: "20%", width: "50%" }}
