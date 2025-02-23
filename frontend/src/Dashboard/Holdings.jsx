@@ -21,7 +21,7 @@ function Holdings() {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8080/allHoldings").then((res) => {
+        axios.get("https://easy-stock-backend.onrender.com/allHoldings").then((res) => {
             setAllHoldings(res.data);
             console.log("holdings recieved");
         })  //will connect to the api we provide

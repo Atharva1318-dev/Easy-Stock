@@ -42,7 +42,7 @@ function SignUp() {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://localhost:8080/signup",
+                "https://easy-stock-backend.onrender.com/signup",
                 {
                     email: email,
                     username: username,

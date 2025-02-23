@@ -33,7 +33,7 @@ function Login() {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://localhost:8080/login",
+                "https://easy-stock-backend.onrender.com/login",
                 {
                     email: email,
                     password: password
