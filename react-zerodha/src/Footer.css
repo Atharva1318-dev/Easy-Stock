@@ -1,0 +1,27 @@
+/* Custom styles */
+.bg-custom-dark {
+  background-color: #1E3A8A;
+}
+
+.custom-rounded {
+  border-radius: 0.5rem; /* Adjust as needed */
+}
+
+/* Hover text color for links */
+.hover-text {
+    text-decoration-line: none;
+    color: white;
+  transition: color 0.3s;
+}
+.hover-text:hover {
+  color: #7fb6ef !important;
+}
+
+/* For the “group” hover effect on the Chevron icons */
+.group .chevron {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.group:hover .chevron {
+  opacity: 1;
+}

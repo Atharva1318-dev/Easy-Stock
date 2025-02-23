@@ -1,0 +1,88 @@
+.HomeHero img{
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+}
+
+.typed-cursor{
+  font-size:x-large !important;
+  line-height: inherit !important;
+}
+
+.btn-navy {
+    background-color: #1E3A8A !important;
+    border: none !important;
+    font-size: 1.25rem !important; 
+}
+
+.btn-navy:hover {
+    background-color: #274C7C !important;
+}
+
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both !important;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both !important;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px) !important;
+            filter: blur(12px) !important;
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px) !important;
+            filter: blur(0px) !important;
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em !important;
+    -webkit-filter: blur(12px) !important;
+            filter: blur(12px) !important;
+    opacity: 0 !important;
+  }
+  100% {
+    -webkit-filter: blur(0px) !important;
+            filter: blur(0px) !important;
+    opacity: 1!important;
+  }
+}
+
+
+
+/* Animation for the heading */
+.focus-in-expand {
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+}

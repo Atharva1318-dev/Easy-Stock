@@ -1,0 +1,10 @@
+.down{
+    color:red;
+}
+.up{
+    color:green
+}
+
+.watchlistItem:hover{
+    background-color: #e0e0e0   !important;
+}
