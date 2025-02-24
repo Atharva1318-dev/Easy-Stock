@@ -13,6 +13,7 @@ import Footer from './Footer';
 import PageNotFound from './PageNotFound';
 import Login from './Login.jsx';
 import Dashboard from './Dashboard/Home.jsx';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -25,6 +26,7 @@ import { useLocation } from 'react-router-dom';
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
 
 
   useEffect(() => {
@@ -60,6 +62,7 @@ function App() {
           setUsername(""); // Clear user state if token is invalid.
         }
       }
+      setLoading(false);
     };
     verifyCookie();
   }, [cookies, navigate, removeCookie]);
@@ -68,6 +71,16 @@ function App() {
     navigate("/");
     console.log("logout succesful");
   };
+
+  if (loading) {
+    return (
+      <DotLottieReact
+        src="https://lottie.host/74aaebb1-9491-4a85-a47f-77c7b0d2068a/9UWhjfVf9C.lottie"
+        loop
+        autoplay
+      />
+    );
+  }
 
 
   return (

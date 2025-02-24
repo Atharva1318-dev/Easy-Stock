@@ -1,13 +1,17 @@
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 function PageNotFound() {
     return (
         <div className="container">
-            <div className="d-flex flex-column justify-content-evenly align-items-center">
-                <h3>404 Page Not Found</h3>
-                <br />
-                <h5>The page you are looking for does not exist.</h5>
-            </div>
+            <DotLottieReact
+                src="https://lottie.host/81f68897-ff93-4a17-81c4-1f59e048f742/niesnGPGql.lottie"
+                loop
+                autoplay
+            />
         </div>
     );
 }
 
 export default PageNotFound;
+
