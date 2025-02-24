@@ -7,6 +7,7 @@ import "./HomeHero.css"
 import Dashboard from '../Dashboard/Home';
 
 export default function HomeHero({ username }) {
+    console.log({ username });
     const taglineRef = useRef(null)
 
     useEffect(() => {

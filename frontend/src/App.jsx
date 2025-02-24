@@ -49,13 +49,13 @@ function App() {
         // navigate("/login");
         // console.log("!cookies.token this if is getting executed");
         const { data } = await axios.post(
-          "http://localhost:8080",
+          "https://easy-stock-backend.onrender.com",
           {},
           { withCredentials: true }
         );
         const { status, user } = data;
         if (status) {
-          setUsername(user);
+          await setUsername(user);
           // You can show a toast or perform other actions here.
         } else {
           removeCookie("token");
