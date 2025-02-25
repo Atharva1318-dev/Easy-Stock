@@ -57,7 +57,7 @@ function App() {
         const { status, user } = data;
         console.log("API response:", data);
         if (status) {
-          await setUsername(user);
+          setUsername(user);
           // You can show a toast or perform other actions here.
         } else {
           removeCookie("token");
