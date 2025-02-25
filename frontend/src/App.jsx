@@ -48,19 +48,24 @@ function App() {
       //if (cookies.token) {
       // navigate("/login");
       // console.log("!cookies.token this if is getting executed");
-      const { data } = await axios.post(
-        "https://easy-stock-backend.onrender.com",
-        {},
-        { withCredentials: true }
-      );
-      const { status, user } = data;
-      console.log("API response:", data);
-      if (status) {
-        await setUsername(user);
-        // You can show a toast or perform other actions here.
-      } else {
-        removeCookie("token");
-        setUsername(""); // Clear user state if token is invalid.
+      try {
+        const { data } = await axios.post(
+          "https://easy-stock-backend.onrender.com",
+          {},
+          { withCredentials: true }
+        );
+        const { status, user } = data;
+        console.log("API response:", data);
+        if (status) {
+          await setUsername(user);
+          // You can show a toast or perform other actions here.
+        } else {
+          removeCookie("token");
+          setUsername(""); // Clear user state if token is invalid.
+        }
+      } catch (err) {
+        console.error("Error verifying cookie:", err);
+        setUsername("");
       }
       //}
       setLoading(false);
