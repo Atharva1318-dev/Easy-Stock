@@ -47,10 +47,12 @@ module.exports.Login = async (req, res, next) => {
         const token = createSecretToken(user._id);
 
         console.log(token);
-        
+
         res.cookie("token", token, {
-            withCredentials: true,
-            httpOnly: false,
+            sameSite: "None",
+            //withCredentials: true,
+            httpOnly: true,
+            secure: true,
         });
         res.status(201).json({ message: "User logged in successfully", success: true });
         //next()
