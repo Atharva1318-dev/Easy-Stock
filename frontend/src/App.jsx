@@ -72,10 +72,14 @@ function App() {
     };
     verifyCookie();
   }, [cookies, navigate, removeCookie]);
-  const Logout = () => {
-    removeCookie("token");
-    navigate("/");
-    console.log("logout succesful");
+  const Logout = async () => {
+    try {
+      await axios.post("https://easy-stock-backend.onrender.com/logout", {}, { withCredentials: true });
+      navigate("/");
+      console.log("Logout successful");
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
   };
 
   if (loading) {
