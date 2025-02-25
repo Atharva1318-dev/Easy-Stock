@@ -75,6 +75,7 @@ function App() {
   const Logout = async () => {
     try {
       await axios.post("https://easy-stock-backend.onrender.com/logout", {}, { withCredentials: true });
+      setUsername("");
       navigate("/");
       console.log("Logout successful");
     } catch (error) {
