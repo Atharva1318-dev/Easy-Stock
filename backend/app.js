@@ -18,7 +18,7 @@ mongoose.connect(process.env.ATLASDB_URL)
     .then(() => console.log('DB Connected!'));
 
 const corsOptions = {
-    origin: ['https://easy-stock-frontend.onrender.com', 'http://localhost:5173/', 'http://localhost:5174'], // Frontend URL
+    origin: ['https://easy-stock-frontend.onrender.com', 'http://localhost:5173', 'http://localhost:5174'], // Frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };

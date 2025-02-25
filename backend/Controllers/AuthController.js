@@ -41,7 +41,11 @@ module.exports.Login = async (req, res, next) => {
         if (!auth) {
             return res.json({ message: 'Incorrect password or email' })
         }
+
+        console.log(user._id);
+
         const token = createSecretToken(user._id);
+        
         res.cookie("token", token, {
             withCredentials: true,
             httpOnly: false,
