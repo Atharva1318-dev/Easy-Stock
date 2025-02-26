@@ -19,7 +19,7 @@ function About() {
 
     return (
         <div className="container-fluid p-0">
-            {/* Hero Section */}
+
             <div className="text-white py-5" style={{ backgroundColor: "#1E3A8A" }}>
                 <div className="container">
                     <div className="row align-items-center">
@@ -62,25 +62,24 @@ function About() {
                 </div>
             </div>
 
-            {/* Stats Section */}
-            <div className="bg-light py-5">
+            <div className="bg-light py-5" style={{ color: "#7fb6ef" }}>
                 <div className="container">
                     <div className="row g-4 text-center">
                         <div className="col-md-4" data-aos="zoom-in">
                             <div className="p-4">
-                                <h2 className="display-4 fw-bold text-primary">1Cr+</h2>
+                                <h2 className="display-4 fw-bold">1Cr+</h2>
                                 <p className="text-muted">Active Clients</p>
                             </div>
                         </div>
                         <div className="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                             <div className="p-4">
-                                <h2 className="display-4 fw-bold text-primary">15%</h2>
+                                <h2 className="display-4 fw-bold">15%</h2>
                                 <p className="text-muted">Of All Indian Retail Trading Volumes</p>
                             </div>
                         </div>
                         <div className="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                             <div className="p-4">
-                                <h2 className="display-4 fw-bold text-primary">2010</h2>
+                                <h2 className="display-4 fw-bold">2010</h2>
                                 <p className="text-muted">Year Established</p>
                             </div>
                         </div>
@@ -88,11 +87,10 @@ function About() {
                 </div>
             </div>
 
-            {/* Initiatives Section */}
             <div className="container py-5">
                 <div className="row align-items-center g-5">
-                    <div className="col-lg-6" data-aos="fade-right">
-                        <div className="w-100" style={{ maxWidth: "900px", margin: "0 auto" }}>
+                    <div className="col-lg-7" data-aos="fade-right">
+                        <div className="w-100" style={{ maxWidth: "1000px", margin: "0 auto" }}>
                             <DotLottieReact
                                 src="https://lottie.host/78c7634b-175f-4bac-af10-32ca11cbebce/cNwExUS0xL.lottie"
                                 loop
@@ -100,7 +98,7 @@ function About() {
                             />
                         </div>
                     </div>
-                    <div className="col-lg-6" data-aos="fade-left">
+                    <div className="col-lg-5" data-aos="fade-left">
                         <h2 className="fw-bold mb-4">Our Initiatives</h2>
                         <div className="d-flex align-items-start mb-4">
                             <div className="bg-primary text-white rounded-circle p-3 me-3">
@@ -130,7 +128,6 @@ function About() {
                 </div>
             </div>
 
-            {/* People Section */}
             <div className="bg-light py-5">
                 <div className="container">
                     <h2 className="text-center fw-bold mb-5" data-aos="fade-up">
@@ -161,13 +158,13 @@ function About() {
                                         Committee (MDAC).
                                     </p>
                                     <div className="d-flex justify-content-center gap-3">
-                                        <a href="#" className="btn btn-outline-primary">
+                                        <a href="#" className="btn btn-navy">
                                             Homepage
                                         </a>
-                                        <a href="#" className="btn btn-outline-primary">
+                                        <a href="#" className="btn btn-navy">
                                             TradingQnA
                                         </a>
-                                        <a href="#" className="btn btn-outline-primary">
+                                        <a href="#" className="btn btn-navy">
                                             Twitter
                                         </a>
                                     </div>

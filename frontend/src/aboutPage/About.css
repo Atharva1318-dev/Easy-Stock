@@ -17,3 +17,13 @@
               border-radius: 50%;
               animation: rotate 4s linear infinite;
             }
+
+.btn-navy {
+    border: 1px solid #1E3A8A !important;
+    font-size: 1.25rem !important; 
+}
+
+.btn-navy:hover {
+    background-color: #274C7C !important;
+    color:"dceeff"
+}
