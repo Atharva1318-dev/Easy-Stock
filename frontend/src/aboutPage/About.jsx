@@ -36,11 +36,10 @@ function About() {
                 </div>
             </div>
 
-            {/* History Section */}
             <div className="container py-5">
                 <div className="row g-4">
                     <div className="col-md-6" data-aos="fade-up">
-                        <div className="card h-100 shadow-sm border-0 p-4">
+                        <div className="card h-100 shadow-sm border-0 rounded p-4">
                             <h3 className="fw-bold mb-3">Our Beginning</h3>
                             <p className="text-muted">
                                 We kick-started operations on the 15th of August, 2010 with the goal of breaking all barriers that
@@ -50,7 +49,7 @@ function About() {
                         </div>
                     </div>
                     <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div className="card h-100 shadow-sm border-0 p-4">
+                        <div className="card h-100 shadow-sm border-0 rounded p-4">
                             <h3 className="fw-bold mb-3">Where We Are Today</h3>
                             <p className="text-muted">
                                 Today, our disruptive pricing models and in-house technology have made us the biggest stock broker in
@@ -90,7 +89,7 @@ function About() {
             <div className="container py-3">
                 <div className="row align-items-center g-4">
                     <div className="col-lg-7" data-aos="fade-right">
-                        <div className="w-100" style={{ maxWidth: "1300px", margin: "0 auto" }}>
+                        <div className="w-100" style={{ maxWidth: "1350px", margin: "0 auto" }}>
                             <DotLottieReact
                                 src="https://lottie.host/78c7634b-175f-4bac-af10-32ca11cbebce/cNwExUS0xL.lottie"
                                 loop
