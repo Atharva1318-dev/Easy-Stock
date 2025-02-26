@@ -92,9 +92,9 @@ function About() {
             <div className="container py-5">
                 <div className="row align-items-center g-5">
                     <div className="col-lg-6" data-aos="fade-right">
-                        <div className="w-100" style={{ maxWidth: "500px", margin: "0 auto" }}>
+                        <div className="w-100" style={{ maxWidth: "900px", margin: "0 auto" }}>
                             <DotLottieReact
-                                src="https://lottie.host/51e93b99-c277-46f9-be81-292284d81a53/y9ZC4CAurP.lottie"
+                                src="https://lottie.host/78c7634b-175f-4bac-af10-32ca11cbebce/cNwExUS0xL.lottie"
                                 loop
                                 autoplay
                             />
