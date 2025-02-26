@@ -1,10 +1,11 @@
 // import AboutSectionOne from "./AboutSectionOne";
 // import AboutHistory from "./AboutHistory";
 // import AboutPeople from "./AboutPeople";
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import Lottie from "lottie-react"
 import './About.css'
 
 function About() {
@@ -92,7 +93,11 @@ function About() {
                 <div className="row align-items-center g-5">
                     <div className="col-lg-6" data-aos="fade-right">
                         <div className="w-100" style={{ maxWidth: "500px", margin: "0 auto" }}>
-                            <img src="/placeholder.svg?height=400&width=400" alt="Stock Market Illustration" className="img-fluid" />
+                            <DotLottieReact
+                                src="https://lottie.host/51e93b99-c277-46f9-be81-292284d81a53/y9ZC4CAurP.lottie"
+                                loop
+                                autoplay
+                            />
                         </div>
                     </div>
                     <div className="col-lg-6" data-aos="fade-left">
