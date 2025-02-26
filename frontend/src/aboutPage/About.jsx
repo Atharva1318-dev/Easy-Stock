@@ -87,10 +87,10 @@ function About() {
                 </div>
             </div>
 
-            <div className="container py-5">
-                <div className="row align-items-center g-5">
+            <div className="container py-3">
+                <div className="row align-items-center g-4">
                     <div className="col-lg-7" data-aos="fade-right">
-                        <div className="w-100" style={{ maxWidth: "1000px", margin: "0 auto" }}>
+                        <div className="w-100" style={{ maxWidth: "1300px", margin: "0 auto" }}>
                             <DotLottieReact
                                 src="https://lottie.host/78c7634b-175f-4bac-af10-32ca11cbebce/cNwExUS0xL.lottie"
                                 loop
@@ -101,7 +101,7 @@ function About() {
                     <div className="col-lg-5" data-aos="fade-left">
                         <h2 className="fw-bold mb-4">Our Initiatives</h2>
                         <div className="d-flex align-items-start mb-4">
-                            <div className="bg-primary text-white rounded-circle p-3 me-3">
+                            <div className="text-white rounded-circle p-3 me-3" style={{ backgroundColor: "#1E3A8A" }}>
                                 <i className="bi bi-book fs-4"></i>
                             </div>
                             <div>
@@ -113,7 +113,7 @@ function About() {
                             </div>
                         </div>
                         <div className="d-flex align-items-start">
-                            <div className="bg-primary text-white rounded-circle p-3 me-3">
+                            <div className="text-white rounded-circle p-3 me-3" style={{ backgroundColor: "#1E3A8A" }}>
                                 <i className="bi bi-graph-up fs-4"></i>
                             </div>
                             <div>

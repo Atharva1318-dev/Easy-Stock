@@ -13,12 +13,13 @@
               right: -10px;
               bottom: -10px;
               border: 4px solid transparent;
-              border-top-color: #007bff;
+              border-top-color: #1E3A8A;
               border-radius: 50%;
               animation: rotate 4s linear infinite;
             }
 
 .btn-navy {
+    background-color: #ffffff;
     border: 1px solid #1E3A8A !important;
     font-size: 1.25rem !important; 
 }
