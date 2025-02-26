@@ -19,7 +19,7 @@ function About() {
     return (
         <div className="container-fluid p-0">
             {/* Hero Section */}
-            <div className="bg-primary text-white py-5">
+            <div className="text-white py-5" style={{ backgroundColor: "#1E3A8A" }}>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-right">
@@ -28,7 +28,7 @@ function About() {
                         </div>
                         <div className="col-lg-6" data-aos="fade-left">
                             <div className="w-100" style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                <Lottie animationData={tradingAnimation} loop={true} />
+                                {/* <Lottie animationData={tradingAnimation} loop={true} /> */}
                             </div>
                         </div>
                     </div>
