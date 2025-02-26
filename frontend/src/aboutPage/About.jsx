@@ -4,14 +4,15 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-//import Lottie from "lottie-react"
+import Lottie from "lottie-react"
+import './About.css'
 
 function About() {
 
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: true,
+            once: false,
         })
     }, [])
 
@@ -27,7 +28,7 @@ function About() {
                         </div>
                         <div className="col-lg-6" data-aos="fade-left">
                             <div className="w-100" style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                {/*<Lottie animationData={tradingAnimation} loop={true} />*/}
+                                <Lottie animationData={tradingAnimation} loop={true} />
                             </div>
                         </div>
                     </div>
@@ -137,16 +138,16 @@ function About() {
                                     <div className="position-relative d-inline-block mb-4">
                                         <div className="rotating-border"></div>
                                         <img
-                                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-26%20at%2010.18.34%E2%80%AFAM-BBLsd7nNLeAwWn89DsDc6FeFcuN5Ic.png"
+                                            src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740591392/me_kdgoji.png"
                                             alt="Founder"
                                             className="rounded-circle"
                                             style={{ width: "150px", height: "150px", objectFit: "cover" }}
                                         />
                                     </div>
-                                    <h3 className="fw-bold mb-3">Nithin Kamath</h3>
+                                    <h3 className="fw-bold mb-3">Atharva Jadhav</h3>
                                     <p className="text-muted mb-4">Founder, CEO</p>
                                     <p className="mb-4">
-                                        Nithin bootstrapped and founded Easy Stock in 2010 to overcome the hurdles he faced during his
+                                        Atharva bootstrapped and founded Easy Stock in 2010 to overcome the hurdles he faced during his
                                         decade long stint as a trader. Today, Easy Stock has changed the landscape of the Indian broking
                                         industry.
                                     </p>

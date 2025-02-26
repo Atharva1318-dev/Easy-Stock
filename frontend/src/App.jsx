@@ -86,7 +86,7 @@ function App() {
   if (loading) {
     return (
       <DotLottieReact
-        src="https://lottie.host/74aaebb1-9491-4a85-a47f-77c7b0d2068a/9UWhjfVf9C.lottie"
+        src="https://lottie.host/ca9c5f62-b1bc-489b-8805-4cbcfe412a42/XxgzHTt9xE.lottie"
         loop
         autoplay
       />
