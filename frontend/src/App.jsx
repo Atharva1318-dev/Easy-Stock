@@ -109,9 +109,9 @@ function App() {
           <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/products" element={<Products />}></Route>
+          {/* <Route path="/products" element={<Products />}></Route>
           <Route path="/pricing" element={<PricingPage />}></Route>
-          <Route path="/support" element={<Support />}></Route>
+          <Route path="/support" element={<Support />}></Route> */}
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
       </div>

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -64,7 +66,11 @@ function Login() {
         <div className="container my-5 py-5">
             <div className="row">
                 <div className="col-7">
-                    <img src="../src/assets/signup.png" alt="" />
+                    <DotLottieReact
+                        src="https://lottie.host/25c305c2-4478-49b7-bc28-922b460b2e08/MUHfY7RzSw.lottie"
+                        loop
+                        autoplay
+                    />
                 </div>
                 <div className="col-5">
                     <div className="form-container">

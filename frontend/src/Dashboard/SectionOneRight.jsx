@@ -24,7 +24,7 @@ function SectionOneRight() {
     };
     return (
         <div className="container d-flex justify-content-between align-items-center px-auto shadow-sm sticky-top" style={{ height: "5rem" }}>
-            <Link to="/"><img src="../src/assets/newLogo.png" style={{ height: "20%", width: "40%" }} alt="" /></Link>
+            <Link to="/"><img src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png" style={{ height: "20%", width: "40%" }} alt="" /></Link>
             <div className="d-flex justify-content-evenly align-items-center pt-3 gap-3">
                 <Link to="/home/summary">
                     Dashboard
