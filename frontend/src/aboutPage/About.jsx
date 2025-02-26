@@ -4,7 +4,7 @@
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import Lottie from "lottie-react"
+//import Lottie from "lottie-react"
 
 function About() {
 
