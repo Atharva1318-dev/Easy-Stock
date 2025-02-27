@@ -72,7 +72,7 @@ function SectionTwo({ stock, id }) {
 
     return (
         <div className='card shadow-sm'>
-            <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='py-2 watchlistItem'>
+            <li className="list-group-item d-flex justify-content-between align-items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='py-2 watchlistItem'>
                 <div className="d-flex justify-content-between align-items-center">
                     <p className={stock.isDown ? "down" : "up"}>{stock.name}</p>
                     {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} />}

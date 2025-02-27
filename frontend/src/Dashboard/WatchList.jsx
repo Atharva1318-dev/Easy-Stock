@@ -39,11 +39,13 @@ function Watchlist() {
                 <p className='text-muted ps-2'>Search eg:nfy,e,nift fut weekly,gold mcx</p>
                 <p className='text-muted'>{watchlist.length}/50</p>
             </div>
-            <ul style={{ listStyle: "none" }} className='ps-0'>
-                {watchlist.map((e, idx) => {
-                    return (<SectionTwo stock={e} key={idx} id={e.name} />)
-                })}
-            </ul>
+            <div className="list-group list-group-flush">
+                <ul style={{ listStyle: "none" }} className='ps-0'>
+                    {watchlist.map((e, idx) => {
+                        return (<SectionTwo stock={e} key={idx} id={e.name} />)
+                    })}
+                </ul>
+            </div>
             <DoughnutChart data={data}></DoughnutChart>
         </div>
     );

@@ -13,44 +13,40 @@ function TopBar() {
                     className="me-2"
                     style={{ width: "30%", height: "40%" }}
                 />
-                <div className="d-flex flex-column">
-                    <span className="text-primary fw-bold fs-5">EASY</span>
-                    <span className="text-primary fw-bold fs-5">STOCK</span>
-                </div>
             </div>
 
             <div className="col-md-5">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <button>
+                        <button className="btn btn-navy">
                             <Link to="/home/summary">
                                 Dashboard
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button>
+                        <button className="btn btn-navy">
                             <Link to="/home/orders">
                                 Orders
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button>
+                        <button className="btn btn-navy">
                             <Link to="/home/holdings">
                                 Holdings
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button>
+                        <button className="btn btn-navy">
                             <Link to="/home/positions">
                                 Positions
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button>
+                        <button className="btn btn-navy">
                             <Link to="/home/funds" >
                                 Funds
                             </Link>
