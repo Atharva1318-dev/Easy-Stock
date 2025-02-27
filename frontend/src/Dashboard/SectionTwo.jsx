@@ -79,7 +79,7 @@ function SectionTwo({ stock, id }) {
     </li>
 
     return (
-        <div className='card shadow-sm'>
+        <>
             <li className="list-group-item d-flex justify-content-between align-items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='py-2 watchlistItem'>
                 <span className={stock.isDown ? "down" : "up"}>{stock.name}</span>
                 {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} />}
@@ -96,7 +96,7 @@ function SectionTwo({ stock, id }) {
                 </div>
             </li><hr className='m-0' />
             {showOrder && <BuyOrderMenu id={id} />}
-        </div>
+        </>
     );
 }
 
