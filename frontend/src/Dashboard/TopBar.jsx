@@ -19,34 +19,34 @@ function TopBar() {
                 <ul className="nav nav-pills">
                     <li className="nav-item">
                         <button className="btn btn-navy">
-                            <Link to="/home/summary">
+                            <Link to="/home/summary" style={{ textDecorationLine: "none" }}>
                                 Dashboard
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
                         <button className="btn btn-navy">
-                            <Link to="/home/orders">
+                            <Link to="/home/orders" style={{ textDecorationLine: "none" }}>
                                 Orders
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
                         <button className="btn btn-navy">
-                            <Link to="/home/holdings">
+                            <Link to="/home/holdings" style={{ textDecorationLine: "none" }}>
                                 Holdings
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
                         <button className="btn btn-navy">
-                            <Link to="/home/positions">
+                            <Link to="/home/positions" style={{ textDecorationLine: "none" }}>
                                 Positions
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-navy">
+                        <button className="btn btn-navy" style={{ textDecorationLine: "none" }}>
                             <Link to="/home/funds" >
                                 Funds
                             </Link>
