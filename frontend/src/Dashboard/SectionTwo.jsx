@@ -70,21 +70,13 @@ function SectionTwo({ stock, id }) {
         );
     }
 
-    <li className="list-group-item d-flex justify-content-between align-items-center">
-        <span>INFY</span>
-        <div>
-            <span className="text-danger me-2">-1.60%</span>
-            <span>1555.45</span>
-        </div>
-    </li>
-
     return (
         <>
-            <li className="list-group-item d-flex justify-content-between align-items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='py-2 watchlistItem'>
+            <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='px-2 py-2 watchlistItem list-group-item d-flex justify-content-between align-items-center' style={{ fontSize: "smaller" }}>
                 <span className={stock.isDown ? "down" : "up"}>{stock.name}</span>
                 {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} />}
-                <div className="stock-info">
-                    <span>
+                <div>
+                    <span className='me-2'>
                         {stock.percent}
                     </span>
                     <span>

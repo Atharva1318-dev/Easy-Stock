@@ -35,16 +35,21 @@ function Watchlist() {
 
     return (
         <div style={{ fontSize: "small", overflow: "hidden" }} className='container'>
-            <div className='container d-flex justify-content-between align-items-center pt-2 border-bottom border-black'>
+            <div className='container d-flex justify-content-between align-items-center pt-2'>
                 <p className='text-muted ps-2'>Search eg:nfy,e,nift fut weekly,gold mcx</p>
                 <p className='text-muted'>{watchlist.length}/50</p>
             </div>
-            <div className="list-group list-group-flush">
-                <ul style={{ listStyle: "none" }} className='ps-0'>
-                    {watchlist.map((e, idx) => {
-                        return (<SectionTwo stock={e} key={idx} id={e.name} />)
-                    })}
-                </ul>
+            <div className="card shadow-sm mb-4">
+                <div className="card-header bg-white">
+                    <h5 className="mb-0">Watchlist</h5>
+                </div>
+                <div className="card-body p-0">
+                    <ul className="list-group list-group-flush ps-0" style={{ listStyle: "none" }}>
+                        {watchlist.map((e, idx) => {
+                            return (<SectionTwo stock={e} key={idx} id={e.name} />)
+                        })}
+                    </ul>
+                </div>
             </div>
             <DoughnutChart data={data}></DoughnutChart>
         </div>

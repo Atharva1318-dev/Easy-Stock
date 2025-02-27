@@ -1,56 +1,79 @@
 import SectionOneLeft from "./SectionOneLeft";
 import SectionOneRight from "./SectionOneRight";
 import { Link } from "react-router-dom";
-import './TopBar.css';
+//import './TopBar.css';
+import { useState } from "react";
+
 
 function TopBar() {
+    const [activeTab, setActiveTab] = useState("Holdings")
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab)
+    }
+
     return (
-        <div className="row mb-3 align-items-center">
+        <div className="row mb-3 align-items-center px-3">
             <div className="col-md-4 d-flex align-items-center">
                 <img
                     src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png"
                     alt="Easy Stock Logo"
                     className="me-2"
-                    style={{ width: "30%", height: "40%" }}
+                    style={{ height: "40%", width: "48%" }}
                 />
             </div>
 
             <div className="col-md-5">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <button className="btn btn-sm btn-navy">
-                            <Link to="/home/summary" style={{ textDecorationLine: "none" }}>
-                                Dashboard
-                            </Link>
-                        </button>
+                        <Link
+                            to="/home/summary"
+                            onClick={() => handleTabClick("Dashboard")}
+                            className={`nav-link ${activeTab === "Dashboard" ? "active" : ""}`}
+                            style={{ textDecoration: "none" }}
+                        >
+                            Dashboard
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-sm  btn-navy">
-                            <Link to="/home/orders" style={{ textDecorationLine: "none" }}>
-                                Orders
-                            </Link>
-                        </button>
+                        <Link
+                            to="/home/orders"
+                            onClick={() => handleTabClick("Orders")}
+                            className={`nav-link ${activeTab === "Orders" ? "active" : ""}`}
+                            style={{ textDecoration: "none" }}
+                        >
+                            Orders
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-sm  btn-navy">
-                            <Link to="/home/holdings" style={{ textDecorationLine: "none" }}>
-                                Holdings
-                            </Link>
-                        </button>
+                        <Link
+                            to="/home/holdings"
+                            onClick={() => handleTabClick("Holdings")}
+                            className={`nav-link ${activeTab === "Holdings" ? "active" : ""}`}
+                            style={{ textDecoration: "none" }}
+                        >
+                            Holdings
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-sm  btn-navy">
-                            <Link to="/home/positions" style={{ textDecorationLine: "none" }}>
-                                Positions
-                            </Link>
-                        </button>
+                        <Link
+                            to="/home/positions"
+                            onClick={() => handleTabClick("Positions")}
+                            className={`nav-link ${activeTab === "Positions" ? "active" : ""}`}
+                            style={{ textDecoration: "none" }}
+                        >
+                            Positions
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-sm btn-navy">
-                            <Link to="/home/funds" style={{ textDecorationLine: "none" }}>
-                                Funds
-                            </Link>
-                        </button>
+                        <Link
+                            to="/home/funds"
+                            onClick={() => handleTabClick("Funds")}
+                            className={`nav-link ${activeTab === "Funds" ? "active" : ""}`}
+                            style={{ textDecoration: "none" }}
+                        >
+                            Funds
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -64,6 +87,7 @@ function TopBar() {
                 </span>
             </div>
         </div>
+
     )
 }
 
