@@ -18,36 +18,36 @@ function TopBar() {
             <div className="col-md-5">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <button className="btn btn-navy">
+                        <button className="btn btn-sm btn-navy">
                             <Link to="/home/summary" style={{ textDecorationLine: "none" }}>
                                 Dashboard
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-navy">
+                        <button className="btn btn-sm  btn-navy">
                             <Link to="/home/orders" style={{ textDecorationLine: "none" }}>
                                 Orders
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-navy">
+                        <button className="btn btn-sm  btn-navy">
                             <Link to="/home/holdings" style={{ textDecorationLine: "none" }}>
                                 Holdings
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-navy">
+                        <button className="btn btn-sm  btn-navy">
                             <Link to="/home/positions" style={{ textDecorationLine: "none" }}>
                                 Positions
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button className="btn btn-navy" style={{ textDecorationLine: "none" }}>
-                            <Link to="/home/funds" >
+                        <button className="btn btn-sm btn-navy">
+                            <Link to="/home/funds" style={{ textDecorationLine: "none" }}>
                                 Funds
                             </Link>
                         </button>
