@@ -7,12 +7,11 @@ function TopBar() {
     return (
         <div className="row mb-3 align-items-center">
             <div className="col-md-4 d-flex align-items-center">
-                <Image
-                    src="/placeholder.svg?height=40&width=40"
+                <img
+                    src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png"
                     alt="Easy Stock Logo"
-                    width={40}
-                    height={40}
                     className="me-2"
+                    style={{ width: "30%", height: "40%" }}
                 />
                 <div className="d-flex flex-column">
                     <span className="text-primary fw-bold fs-5">EASY</span>
