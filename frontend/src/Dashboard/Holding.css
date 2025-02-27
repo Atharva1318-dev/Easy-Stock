@@ -4,8 +4,8 @@
 }
 
 .card {
-  border-radius: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 2rem;
+  border: 1.5px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header {

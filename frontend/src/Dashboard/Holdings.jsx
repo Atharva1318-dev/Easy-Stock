@@ -71,12 +71,11 @@ function Holdings() {
                 </div>
                 <div className="d-flex justify-content-between align-items-center p-2 bg-light">
                     <div>
-                        <span className="badge bg-primary">Total: {allHoldings.length} stocks</span>
+                        <span className="badge" style={{ backgroundColor: "#1E3A8A" }}>Total: {allHoldings.length} stocks</span>
                     </div>
-
                 </div>
             </div>
-            <br />
+            <br /><br />
             <VerticalChart data={data}></VerticalChart>
         </div>
     );

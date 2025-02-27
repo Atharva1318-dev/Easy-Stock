@@ -11,7 +11,7 @@ function Dashboard({ username }) {
         <div style={{ fontSize: "small", overflowY: "auto" }} className='container'>
             <br /><br />
             <Routes>
-                <Route path='summary' element={<Summary username={username} />}></Route>
+                <Route path='/' element={<Summary username={username} />}></Route>
                 <Route path='positions' element={<Position />}></Route>
                 <Route path='holdings' element={<Holdings />}></Route>
                 <Route path='orders' element={<Orders />}></Route>
