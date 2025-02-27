@@ -1,25 +1,24 @@
 import SectionOneLeft from "./SectionOneLeft";
 import SectionOneRight from "./SectionOneRight";
 import { Link } from "react-router-dom";
-//import './TopBar.css';
 import { useState } from "react";
 
-
 function TopBar() {
-    const [activeTab, setActiveTab] = useState("Holdings")
+    const [activeTab, setActiveTab] = useState("Holdings");
 
     const handleTabClick = (tab) => {
-        setActiveTab(tab)
-    }
+        setActiveTab(tab);
+    };
 
     return (
-        <div className="row mb-3 align-items-center px-3">
+        <div className="row mb-3 align-items-center">
             <div className="col-md-4 d-flex align-items-center">
                 <img
                     src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png"
                     alt="Easy Stock Logo"
+                    width={40}
+                    height={40}
                     className="me-2"
-                    style={{ height: "40%", width: "48%" }}
                 />
             </div>
 
@@ -87,8 +86,7 @@ function TopBar() {
                 </span>
             </div>
         </div>
-
-    )
+    );
 }
 
 export default TopBar;
