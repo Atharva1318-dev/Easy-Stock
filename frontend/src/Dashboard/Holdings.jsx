@@ -2,6 +2,7 @@ import "./stock.css";
 import { useState, useEffect } from "react";
 import axios, { all } from "axios";
 import { VerticalChart } from "./VerticalChart";
+import 'Holdings.css';
 
 
 function Holdings() {
@@ -28,43 +29,56 @@ function Holdings() {
     }, []);
 
     return (
-        <><h3>Holdings  ({allHoldings.length})</h3>
-            <br /><hr className="m-0" />
-            <table className="table table-hover">
-                <thead style={{ fontSize: "x-small" }}>
-                    <tr>
-                        <th scope="col">Instrument</th>
-                        <th scope="col">Qty</th>
-                        <th scope="col">Avg cost</th>
-                        <th scope="col">LTP</th>
-                        <th scope="col">Curr. value</th>
-                        <th scope="col">P&L</th>
-                        <th scope="col">Net chg.</th>
-                        <th scope="col">Day ch.</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {allHoldings.map((e, idx) => {
-                        const marketValue = e.price * e.qty;
-                        const isProfit = marketValue - e.avg * e.qty >= 0.0;
-                        const profClass = isProfit ? "profitClass" : "lossClass";
-                        return (
-                            <tr key={idx}>
-                                <td>{e.name}</td>
-                                <td>{e.qty}</td>
-                                <td>{e.avg.toFixed(2)}</td>
-                                <td>{e.price.toFixed(2)}</td>
-                                <td>{marketValue}</td>
-                                <td className={profClass}>{(marketValue - e.avg * e.qty).toFixed(2)}</td>
-                                <td className={profClass}>{e.net}</td>
-                                <td>{e.day}</td>
+        <div className="card shadow-sm">
+            <div className="card-header bg-white d-flex justify-content-between align-items-center">
+                <h5 className="mb-0">Holdings</h5>
+            </div>
+            <div className="card-body p-0">
+                <div className="table-responsive">
+                    <table className="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Instrument</th>
+                                <th>Qty</th>
+                                <th>Avg cost</th>
+                                <th>LTP</th>
+                                <th>Curr. value</th>
+                                <th>P&L</th>
+                                <th>Net chg.</th>
+                                <th>Day ch.</th>
                             </tr>
-                        )
-                    })}
-                </tbody>
-            </table>
+                        </thead>
+                        <tbody>
+                            {allHoldings.map((e, idx) => {
+                                const marketValue = e.price * e.qty;
+                                const isProfit = marketValue - e.avg * e.qty >= 0.0;
+                                const profClass = isProfit ? "profitClass" : "lossClass";
+                                return (
+                                    <tr key={idx}>
+                                        <td>{e.name}</td>
+                                        <td>{e.qty}</td>
+                                        <td>{e.avg.toFixed(2)}</td>
+                                        <td>{e.price.toFixed(2)}</td>
+                                        <td>{marketValue}</td>
+                                        <td className={profClass}>{(marketValue - e.avg * e.qty).toFixed(2)}</td>
+                                        <td className={profClass}>{e.net}</td>
+                                        <td>{e.day}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+                <div className="d-flex justify-content-between align-items-center p-2 bg-light">
+                    <div>
+                        <span className="badge bg-primary">Total: {allHoldings.length} stocks</span>
+                    </div>
+
+                </div>
+            </div>
+            <br />
             <VerticalChart data={data}></VerticalChart>
-        </>
+        </div>
     );
 }
 

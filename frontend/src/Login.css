@@ -61,14 +61,19 @@
   border-radius: 20px;
   border: 0 !important;
   outline: 0 !important;
-  background: teal;
-  color: white;
+  background-color: white !important;
+  color: black;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .form-btn:active {
   box-shadow: none;
+}
+
+.form-btn:hover {
+    background-color: #274C7C !important;
+    color:#dceeff !important;
 }
 
 .sign-up-label {
