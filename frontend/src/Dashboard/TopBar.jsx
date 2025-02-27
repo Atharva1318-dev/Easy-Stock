@@ -1,5 +1,6 @@
 import SectionOneLeft from "./SectionOneLeft";
 import SectionOneRight from "./SectionOneRight";
+import { Link } from "react-router-dom";
 import './TopBar.css';
 
 function TopBar() {
