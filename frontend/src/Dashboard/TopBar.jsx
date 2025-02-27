@@ -22,45 +22,35 @@ function TopBar() {
             <div className="col-md-5">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <button
-                            className={`nav-link ${activeTab === "Dashboard" ? "active" : ""}`}
-                        >
+                        <button>
                             <Link to="/home/summary">
                                 Dashboard
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button
-                            className={`nav-link ${activeTab === "Orders" ? "active" : ""}`}
-                        >
+                        <button>
                             <Link to="/home/orders">
                                 Orders
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button
-                            className={`nav-link ${activeTab === "Holdings" ? "active" : ""}`}
-                        >
+                        <button>
                             <Link to="/home/holdings">
                                 Holdings
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button
-                            className={`nav-link ${activeTab === "Positions" ? "active" : ""}`}
-                        >
+                        <button>
                             <Link to="/home/positions">
                                 Positions
                             </Link>
                         </button>
                     </li>
                     <li className="nav-item">
-                        <button
-                            className={`nav-link ${activeTab === "Funds" ? "active" : ""}`}
-                        >
+                        <button>
                             <Link to="/home/funds" >
                                 Funds
                             </Link>

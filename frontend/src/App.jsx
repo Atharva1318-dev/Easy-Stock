@@ -85,7 +85,7 @@ function App() {
 
   if (loading) {
     return (
-      <div style={{ maxWidth: "500px", maxHeight: "500px" }}>
+      <div className="ms-auto my-auto" style={{ maxWidth: "500px", maxHeight: "500px" }}>
         <DotLottieReact
           src="https://lottie.host/ca9c5f62-b1bc-489b-8805-4cbcfe412a42/XxgzHTt9xE.lottie"
           loop
