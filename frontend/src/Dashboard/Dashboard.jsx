@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 function Dashboard({ username }) {
     return (
         <div style={{ fontSize: "small", overflowY: "auto" }} className='container'>
-            <br /><br /><br />
+            <br /><br />
             <Routes>
                 <Route path='summary' element={<Summary username={username} />}></Route>
                 <Route path='positions' element={<Position />}></Route>
