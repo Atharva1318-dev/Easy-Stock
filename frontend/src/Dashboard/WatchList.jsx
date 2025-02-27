@@ -3,6 +3,7 @@ import SectionTwo from './SectionTwo.jsx';
 import { watchlist } from './data';
 import { DoughnutChart } from './DoughnutChart.jsx';
 
+
 function Watchlist() {
 
     const data = {
