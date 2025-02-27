@@ -70,23 +70,29 @@ function SectionTwo({ stock, id }) {
         );
     }
 
+    <li className="list-group-item d-flex justify-content-between align-items-center">
+        <span>INFY</span>
+        <div>
+            <span className="text-danger me-2">-1.60%</span>
+            <span>1555.45</span>
+        </div>
+    </li>
+
     return (
         <div className='card shadow-sm'>
             <li className="list-group-item d-flex justify-content-between align-items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='py-2 watchlistItem'>
-                <div className="d-flex justify-content-between align-items-center">
-                    <p className={stock.isDown ? "down" : "up"}>{stock.name}</p>
-                    {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} />}
-                    <div className="stock-info">
-                        <span>
-                            {stock.percent}
-                        </span>
-                        <span>
-                            {stock.isDown ? <KeyboardArrowDownIcon style={{ color: "red" }} /> : <KeyboardArrowUpIcon style={{ color: "green" }} />}
-                        </span>
-                        <span>
-                            {stock.price}
-                        </span>
-                    </div>
+                <span className={stock.isDown ? "down" : "up"}>{stock.name}</span>
+                {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} />}
+                <div className="stock-info">
+                    <span>
+                        {stock.percent}
+                    </span>
+                    <span>
+                        {stock.isDown ? <KeyboardArrowDownIcon style={{ color: "red" }} /> : <KeyboardArrowUpIcon style={{ color: "green" }} />}
+                    </span>
+                    <span>
+                        {stock.price}
+                    </span>
                 </div>
             </li><hr className='m-0' />
             {showOrder && <BuyOrderMenu id={id} />}
