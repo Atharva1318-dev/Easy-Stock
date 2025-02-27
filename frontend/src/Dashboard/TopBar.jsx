@@ -13,19 +13,21 @@ function TopBar() {
     return (
         <div className="row mb-3 align-items-center px-2 pt-1">
             <div className="col-md-4 d-flex align-items-center">
-                <img
-                    src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png"
-                    alt="Easy Stock Logo"
-                    style={{ height: "40%", width: "48%" }}
-                    className="me-2"
-                />
+                <Link to="https://easy-stock-frontend.onrender.com/">
+                    <img
+                        src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png"
+                        alt="Easy Stock Logo"
+                        style={{ height: "40%", width: "48%" }}
+                        className="me-2"
+                    />
+                </Link>
             </div>
 
             <div className="col-md-5">
                 <ul className="nav nav-pills">
                     <li className="nav-item">
                         <Link
-                            to="/home/summary"
+                            to="/home"
                             onClick={() => handleTabClick("Dashboard")}
                             className={`nav-link ${activeTab === "Dashboard" ? "active" : ""}`}
                             style={{ textDecoration: "none" }}

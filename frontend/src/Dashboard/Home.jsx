@@ -7,8 +7,8 @@ function Home({ username }) {
         <>
             <TopBar></TopBar>
             <div className="row gx-0" style={{ background: "linear-gradient(135deg, #ffffff 0%, #dceeff 100%)" }}>
-                <div className="col-lg-8"><Dashboard username={username} /></div>
-                <div className="col-lg-4 border-end border-black"><Watchlist /></div>
+                <div className="col-lg-8 px-2"><Dashboard username={username} /></div>
+                <div className="col-lg-4 px-2"><Watchlist /></div>
             </div>
         </>
     );
