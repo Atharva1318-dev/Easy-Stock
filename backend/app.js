@@ -84,8 +84,14 @@ app.post("/newOrder", async (req, res) => {
     });
 
     await newOrder.save();
+    console.log("new Order successfull");
 }
 );
+
+app.get("/allOrders", async (req, res) => {
+    let allOrders = await Order.find({});
+    res.json(allOrders);
+});
 
 app.listen(PORT, () => {
     console.log(`listening at port ${PORT}`);

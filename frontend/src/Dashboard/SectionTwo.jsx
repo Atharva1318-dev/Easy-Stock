@@ -50,12 +50,15 @@ function SectionTwo({ stock, id }) {
         const [stockPrice, setStockPrice] = useState(0.0);
 
         const placeOrder = () => {
-            axios.post("http://localhost:8080/newOrder", {
+            axios.post("https://easy-stock-backend.onrender.com/newOrder", {
                 name: id,
                 qty: stockQuantity,
                 price: stockPrice,
                 mode: "BUY",
-            })
+            });
+            console.log("Order placed");
+
+            setShowOrder(false);
         }
 
         return (
