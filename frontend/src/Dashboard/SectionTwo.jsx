@@ -10,14 +10,14 @@ import axios from 'axios';
 
 
 
-const Options = ({ uid, handleBuyOrder }) => {    //uid is required to uniquely identify that which stock is hovered
+const Options = ({ uid, handleBuyOrder, handleSellOrder }) => {    //uid is required to uniquely identify that which stock is hovered
 
 
     return (
         <span>
             <span>
                 <Tooltip title="Buy (B)" placement='top' arrow TransitionComponent={Grow}><Button variant='contained' style={{ fontSize: "xx-small" }} onClick={handleBuyOrder}>B</Button></Tooltip>
-                <Tooltip title="Sell (S)" placement='top' arrow TransitionComponent={Grow}><Button variant='contained' color='error' style={{ fontSize: "xx-small" }}>S</Button></Tooltip>
+                <Tooltip title="Sell (S)" placement='top' arrow TransitionComponent={Grow}><Button variant='contained' color='error' style={{ fontSize: "xx-small" }} onClick={handleSellOrder}>S</Button></Tooltip>
                 <Tooltip title="Chart (C)" placement='top' arrow TransitionComponent={Grow}><Button style={{ backgroundColor: "white", color: "black", fontSize: "xx-small" }}><ShowChartIcon style={{ fontSize: "large" }}></ShowChartIcon></Button></Tooltip>
             </span>
         </span>
@@ -30,6 +30,10 @@ function SectionTwo({ stock, id }) {
     const [showOrder, setShowOrder] = useState(false);
 
     const handleBuyOrder = () => {
+        setShowOrder(true);
+    }
+
+    const handleSellOrder = () => {
         setShowOrder(true);
     }
 
@@ -94,7 +98,7 @@ function SectionTwo({ stock, id }) {
                     <TextField id="outlined-basic" label="Quantity" variant="outlined" onChange={(event) => { setSellStockQuantity(event.target.value) }} value={stockQuantity} />
                     <TextField id="outlined-basic" label="Price" variant="outlined" onChange={(event) => { setSellStockPrice(event.target.value) }} value={stockPrice} />
                 </div>
-                <span><Button variant="contained">Sell</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#e0e0e0", color: "black" }} onClick={handleCancelOrder}>Cancel</Button></span>
+                <span><Button variant="contained">Sell</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#ff5722", color: "black" }} onClick={handleCancelOrder}>Cancel</Button></span>
             </div>
         );
     }
@@ -103,7 +107,7 @@ function SectionTwo({ stock, id }) {
         <>
             <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit} className='px-2 py-2 watchlistItem list-group-item d-flex justify-content-between align-items-center' style={{ fontSize: "smaller" }}>
                 <span className={stock.isDown ? "down" : "up"}>{stock.name}</span>
-                {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} />}
+                {showOptions && <Options uid={id} handleBuyOrder={handleBuyOrder} handleSellOrder={handleSellOrder} />}
                 <div>
                     <span className='me-2'>
                         {stock.percent}
