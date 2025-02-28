@@ -29,12 +29,14 @@ function SectionTwo({ stock, id }) {
 
     const [showOrder, setShowOrder] = useState(false);
 
+    const [showSellOrder, setShowSellOrder] = useState(false);
+
     const handleBuyOrder = () => {
         setShowOrder(true);
     }
 
     const handleSellOrder = () => {
-        setShowOrder(true);
+        setShowSellOrder(true);
     }
 
     const handleCancelOrder = () => {
@@ -77,8 +79,8 @@ function SectionTwo({ stock, id }) {
     }
 
     const SellOrderMenu = ({ id }) => {
-        const [sellstockQuantity, setSellStockQuantity] = useState(1);
-        const [sellstockPrice, setSellStockPrice] = useState(0.0);
+        const [sellStockQuantity, setSellStockQuantity] = useState(1);
+        const [sellStockPrice, setSellStockPrice] = useState(0.0);
 
         // const sellOrder = () => {
         //     axios.post("https://easy-stock-backend.onrender.com/newOrder", {
@@ -95,8 +97,8 @@ function SectionTwo({ stock, id }) {
         return (
             <div>
                 <div className="d-flex justify-content-between">
-                    <TextField id="outlined-basic" label="Quantity" variant="outlined" onChange={(event) => { setSellStockQuantity(event.target.value) }} value={stockQuantity} />
-                    <TextField id="outlined-basic" label="Price" variant="outlined" onChange={(event) => { setSellStockPrice(event.target.value) }} value={stockPrice} />
+                    <TextField id="outlined-basic" label="Quantity" variant="outlined" onChange={(event) => { setSellStockQuantity(event.target.value) }} value={sellStockQuantity} />
+                    <TextField id="outlined-basic" label="Price" variant="outlined" onChange={(event) => { setSellStockPrice(event.target.value) }} value={sellStockPrice} />
                 </div>
                 <span><Button variant="contained">Sell</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#ff5722", color: "black" }} onClick={handleCancelOrder}>Cancel</Button></span>
             </div>
@@ -121,6 +123,7 @@ function SectionTwo({ stock, id }) {
                 </div>
             </li><hr className='m-0' />
             {showOrder && <BuyOrderMenu id={id} />}
+            {showSellOrder && <SellOrderMenu id={id} />}
         </>
     );
 }
