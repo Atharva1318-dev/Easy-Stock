@@ -43,6 +43,10 @@ function SectionTwo({ stock, id }) {
         setShowOrder(false);
     }
 
+    const handleCancelSellOrder = () => {
+        setShowSellOrder(false);
+    }
+
     const handleMouseEnter = (event) => {
         setShowOptions(true);
     }
@@ -100,7 +104,7 @@ function SectionTwo({ stock, id }) {
                     <TextField id="outlined-basic" label="Quantity" variant="outlined" onChange={(event) => { setSellStockQuantity(event.target.value) }} value={sellStockQuantity} />
                     <TextField id="outlined-basic" label="Price" variant="outlined" onChange={(event) => { setSellStockPrice(event.target.value) }} value={sellStockPrice} />
                 </div>
-                <span><Button variant="contained">Sell</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#ff5722", color: "black" }} onClick={handleCancelOrder}>Cancel</Button></span>
+                <span><Button variant="contained" style={{ backgroundColor: "#ff5722" }}>Sell</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#e0e0e0", color: "black" }} onClick={handleCancelSellOrder}>Cancel</Button></span>
             </div>
         );
     }
