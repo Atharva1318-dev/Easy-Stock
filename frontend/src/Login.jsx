@@ -17,10 +17,17 @@ function Login() {
 
     const [password, setPassword] = useState("");
 
+
+    const [showPassword, setShowPassword] = useState(false);
+
     const [openSnackbar, setOpenSnackbar] = useState(false);
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
+    }
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
     }
 
     const handlePasswordChange = (event) => {
