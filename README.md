@@ -18,8 +18,8 @@ The platform is built using the MERN stack (MongoDB, Express.js, React.js, and N
 ## 🛠️ Features
 Stock Transactions: Users can buy and sell stocks easily.
 CRUD Operations: Full support for creating, reading, updating, and deleting stock data.
+Stock Charts: Chart.js integration for displaying stock price trends dynamically.
 Watchlist: Users can track selected stocks and monitor their performance.
-User Dashboard: Displays current holdings, orders, and positions.
 MongoDB Integration: All stock data is stored in a database instead of relying on paid stock APIs.
 Modern UI: Built with React for a smooth user experience.
 
@@ -32,17 +32,20 @@ Modern UI: Built with React for a smooth user experience.
 React.js
 Bootstrap CSS
 Material UI
-
+Chart.js (for interactive stock price charts)
+Lottie Files (for animations)
 ### Backend:
 Node.js
 Express.js
 Database:
 MongoDB (hosted on MongoDB Atlas)
 Mongoose (MongoDB object modeling tool)
-Authentication & Security:
+### Authentication & Security:
 JWT (JSON Web Token): Secure user authentication.
 bcrypt.js: Password hashing for user credentials.
 dotenv: Managing environment variables.
+### Cloud Services:
+Cloudinary: Used for storing and managing background images.
 Hosting & Deployment:
 Render: Hosting for both frontend and backend.
 MongoDB Atlas: Cloud database storage.
