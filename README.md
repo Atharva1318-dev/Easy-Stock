@@ -4,7 +4,7 @@ Easy Stock is a MERN-based stock trading platform that allows users to perform s
 ---
 
 ## 🌐 Live Demo
-Check out the live version of Easy Stock: [Easy Stock on Render](https://easy-stock-frontend.onrender.com)
+Check out the live version of Easy Stock: https://easy-stock-frontend.onrender.com
 
 ---
 
