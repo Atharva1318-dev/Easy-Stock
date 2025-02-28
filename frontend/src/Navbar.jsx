@@ -34,11 +34,11 @@ export default function Navbar({ username, onLogout }) {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top px-4 sm-px-5 py-2 mb-1">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top px-4 sm-px-5 py-2 mb-1" style={{ paddingRight: "3rem" }}>
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/"><img src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png" alt="logo" style={{ height: "20%", width: "40%" }} /></Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <Link className="navbar-brand" to="/"><img src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740296191/newLogo_bgmfhj.png" alt="logo" style={{ height: "2.9269rem", width: "85%" }} /></Link>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
