@@ -69,11 +69,13 @@ function Holdings() {
                         </tbody>
                     </table>
                 </div>
+                <br />
                 <div className="d-flex justify-content-between align-items-center p-2 bg-light">
                     <div>
                         <span className="badge" style={{ backgroundColor: "#1E3A8A" }}>Total: {allHoldings.length} stocks</span>
                     </div>
                 </div>
+                <br />
             </div>
             <br /><br />
             <VerticalChart data={data}></VerticalChart>

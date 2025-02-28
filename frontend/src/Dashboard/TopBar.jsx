@@ -2,6 +2,7 @@ import SectionOneLeft from "./SectionOneLeft";
 import SectionOneRight from "./SectionOneRight";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import './TopBar.css';
 
 function TopBar() {
     const [activeTab, setActiveTab] = useState("Holdings");

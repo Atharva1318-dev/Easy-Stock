@@ -10,10 +10,10 @@
 }
 
 .card {
-  border-radius: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.145);
 }
 
 .card-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.145);
 }
