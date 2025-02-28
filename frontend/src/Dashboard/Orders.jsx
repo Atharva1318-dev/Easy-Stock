@@ -45,7 +45,6 @@ function Orders() {
                 </div>
                 <br />
             </div>
-            <br /><br />
         </div>
     );
 }

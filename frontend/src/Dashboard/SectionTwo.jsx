@@ -67,8 +67,34 @@ function SectionTwo({ stock, id }) {
                     <TextField id="outlined-basic" label="Quantity" variant="outlined" onChange={(event) => { setStockQuantity(event.target.value) }} value={stockQuantity} />
                     <TextField id="outlined-basic" label="Price" variant="outlined" onChange={(event) => { setStockPrice(event.target.value) }} value={stockPrice} />
                 </div>
-                <p>Margin Required</p>
                 <span><Button variant="contained" onClick={placeOrder}>Buy</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#e0e0e0", color: "black" }} onClick={handleCancelOrder}>Cancel</Button></span>
+            </div>
+        );
+    }
+
+    const SellOrderMenu = ({ id }) => {
+        const [sellstockQuantity, setSellStockQuantity] = useState(1);
+        const [sellstockPrice, setSellStockPrice] = useState(0.0);
+
+        // const sellOrder = () => {
+        //     axios.post("https://easy-stock-backend.onrender.com/newOrder", {
+        //         name: id,
+        //         qty: stockQuantity,
+        //         price: stockPrice,
+        //         mode: "BUY",
+        //     });
+        //     console.log("Order placed");
+
+        //     setShowOrder(false);
+        // }
+
+        return (
+            <div>
+                <div className="d-flex justify-content-between">
+                    <TextField id="outlined-basic" label="Quantity" variant="outlined" onChange={(event) => { setSellStockQuantity(event.target.value) }} value={stockQuantity} />
+                    <TextField id="outlined-basic" label="Price" variant="outlined" onChange={(event) => { setSellStockPrice(event.target.value) }} value={stockPrice} />
+                </div>
+                <span><Button variant="contained">Sell</Button>&nbsp;<Button variant="contained" style={{ backgroundColor: "#e0e0e0", color: "black" }} onClick={handleCancelOrder}>Cancel</Button></span>
             </div>
         );
     }

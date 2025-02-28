@@ -3,7 +3,7 @@ function Summary({ username }) {
     console.log({ username });
     return (
         <div className="container">
-            <h5 className='text-muted'>Hi, {username}!</h5>
+            <h5 className='display-5 fw-bold' style={{ color: "#7fb6ef" }}>Hi, {username}!</h5>
             <br />
             <hr className='m-0' />
             <div className="container py-5">
