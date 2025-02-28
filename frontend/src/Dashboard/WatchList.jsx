@@ -34,7 +34,7 @@ function Watchlist() {
     };
 
     return (
-        <div style={{ fontSize: "small", overflow: "hidden" }} className='container'>
+        <div style={{ fontSize: "small", overflow: "hidden" }} className='container pt-5'>
             <div className='container d-flex justify-content-between align-items-center pt-2'>
                 <p className='text-muted ps-2'>Search eg:nfy,e,nift fut weekly,gold mcx</p>
                 <p className='text-muted'>{watchlist.length}/50</p>

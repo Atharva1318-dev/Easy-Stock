@@ -116,8 +116,8 @@ function App() {
           <Route path="/support" element={<Support />}></Route> */}
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
+        <br /><br />
       </div>
-      <br /><br />
       <Footer />
     </div>
 

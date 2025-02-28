@@ -48,27 +48,14 @@ export default function Navbar({ username, onLogout }) {
                             {!username ? <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/signup">Signup</Link>
                             </li> : ""}
-
                             {!username ? <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
                             </li> : ""}
-
-
-
                             {username ? <li className="nav-item">
                                 <button className="nav-link active" aria-current="page" onClick={onLogout}>Logout</button>
                             </li> : ""}
                             <li className="nav-item">
                                 <Link className="nav-link active" to="/about">About</Link>
-                            </li>
-
-                            <li className="nav-item dropdown">
-                                <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" to="#">Action</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Another action</Link></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><Link className="dropdown-item" to="#">Something else here</Link></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
