@@ -157,13 +157,13 @@ function About() {
                                         Committee (MDAC).
                                     </p>
                                     <div className="d-flex justify-content-center gap-3">
-                                        <a href="#" className="btn btn-navy">
+                                        <a href="#" className="btn btn-navy p-1">
                                             Homepage
                                         </a>
-                                        <a href="#" className="btn btn-navy">
+                                        <a href="#" className="btn btn-navy p-1">
                                             TradingQnA
                                         </a>
-                                        <a href="#" className="btn btn-navy">
+                                        <a href="#" className="btn btn-navy p-1">
                                             Twitter
                                         </a>
                                     </div>
