@@ -42,7 +42,7 @@ export default function HomeHero({ username }) {
 
                         <p className="text-muted lead mb-4">
                             Welcome to EasyStock, the simplest way to buy and sell stocks. Our platform is designed for beginners,
-                            offering a seamless trading experience. Invest with confidence, track your portfolio, and grow your wealth
+                            offering a seamless trading experience. Invest with confidence, and grow your wealth
                             effortlessly.
                         </p>
 

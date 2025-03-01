@@ -8,11 +8,11 @@ function Ecosystem() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2800,
+        speed: 5000,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0,
+        autoplaySpeed: 15,
         cssEase: "linear",
         variableWidth: true, // Allows different card widths
         pauseOnHover: false,
@@ -34,7 +34,7 @@ function Ecosystem() {
     }
 
     return (
-        <div className="px-1" data-aos="fade-up" style={{ marginBottom: "6rem" }}>
+        <div className="px-1" data-aos="fade-up" style={{ marginBottom: "5rem" }}>
             <h2 className="text-center" style={{ color: "#1E3A8A" }}>Trust with confidence</h2>
             <br />
             <div className="d-flex align-items-center">
