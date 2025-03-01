@@ -71,7 +71,7 @@ function Login() {
 
 
     return (
-        <div className="bg-light min-vh-100 d-flex align-items-center">
+        <div className="min-vh-100 d-flex align-items-center">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 col-xl-9">

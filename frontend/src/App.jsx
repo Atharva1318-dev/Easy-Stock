@@ -31,9 +31,22 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2500,
+      duration: 1450,
       easing: "ease-in-out",
-    })
+      startEvent: "load"
+    });
+
+    const timer = setTimeout(() => {
+      AOS.refreshHard();
+    }, 100);
+
+    const handleResize = () => AOS.refresh();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", handleResize);
+    };
   }
     , []);
 
