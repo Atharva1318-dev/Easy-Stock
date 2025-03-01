@@ -29,9 +29,9 @@ export default function HomeHero({ username }) {
                 {/* Text Content Column */}
                 <div className="col-12 col-lg-4 order-2 order-lg-1">
                     <div className="px-1 px-md-1 py-4 py-md-5">
-                        <h1 className="focus-in-expand display-5 fw-bold text-start mb-4" style={{ color: "#1E3A8A" }}>
+                        <h1 className="focus-in-expand display-5 fw-bold text-start mb-4 mainHeading">
                             <b>
-                                Seamless&nbsp;&nbsp;Trading <br />
+                                Seamless&nbsp;Trading <br />
                                 Platform
                             </b>
                         </h1>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import './TopBar.css';
 
 function TopBar() {
-    const [activeTab, setActiveTab] = useState("Holdings");
+    const [activeTab, setActiveTab] = useState("Dashboard");
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);

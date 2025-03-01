@@ -8,7 +8,7 @@ function Ecosystem() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 6000,
+        speed: 6900,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
