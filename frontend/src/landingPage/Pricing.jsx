@@ -3,7 +3,7 @@ import PriceBox from "../PriceBox";
 
 function Pricing() {
     return (
-        <div className="container">
+        <div className="container" data-aos="fade-up" style={{ marginBottom: "6rem" }}>
             <br /><br />
             <h3 className="text-center" style={{ color: "#1E3A8A" }}>Where Low Brokerage Meets High Opportunity.</h3>
             <div className="row gx-1">
