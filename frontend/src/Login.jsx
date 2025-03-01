@@ -79,14 +79,12 @@ function Login() {
                             <div className="card-body p-0">
                                 <div className="row g-0">
                                     <div className="col-lg-6 d-none d-lg-block p-1" style={{ backgroundColor: "#1E3A8A" }}>
-                                        <div className="my-auto">
-                                            <div className="my-auto pt-5 d-flex justify-content-center align-items-center">
-                                                <DotLottieReact
-                                                    src="https://lottie.host/25c305c2-4478-49b7-bc28-922b460b2e08/MUHfY7RzSw.lottie"
-                                                    loop
-                                                    autoplay
-                                                />
-                                            </div>
+                                        <div className="my-auto pt-5 d-flex justify-content-center align-items-center w-100 h-100">
+                                            <DotLottieReact
+                                                src="https://lottie.host/25c305c2-4478-49b7-bc28-922b460b2e08/MUHfY7RzSw.lottie"
+                                                loop
+                                                autoplay
+                                            />
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
