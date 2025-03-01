@@ -63,7 +63,7 @@ function SignUp() {
             if (success) {
                 setOpenSnackbar(true);
                 setTimeout(() => {
-                    navigate("/");
+                    navigate("/login");
                 }, 1200);
             } else {
                 handleError(message);
