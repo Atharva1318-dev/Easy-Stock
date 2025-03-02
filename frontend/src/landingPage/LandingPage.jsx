@@ -16,6 +16,13 @@ import Button from '@mui/material/Button';
 // style = {{ background: "linearGradient(-150deg, #7fb6ef 10%, #ffffff 100%) !important" }}
 function LandingPage({ username }) {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1450,
+            once: false,
+        })
+    }, [])
+
 
 
     return (

@@ -27,7 +27,7 @@ export default function HomeHero({ username }) {
         <div className="HomeHero container-fluid px-0 mt-2 mt-md-1 mb-5">
             <div className="row g-0 align-items-center">
                 {/* Text Content Column */}
-                <div className="col-12 col-lg-4 order-2 order-lg-1">
+                <div className="col-12 col-lg-4 order-2 order-lg-1" style={{ padding: "0 0.045rem 0 0.05rem" }}>
                     <div className="px-1 px-md-0 py-4 py-md-5">
                         <h1 className="focus-in-expand display-5 fw-bold text-start mb-4 mainHeading">
                             <b>

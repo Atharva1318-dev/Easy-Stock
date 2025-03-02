@@ -29,26 +29,26 @@ function App() {
   const [loading, setLoading] = useState(true);
 
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1450,
-      easing: "ease-in-out",
-      startEvent: "load"
-    });
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1450,
+  //     easing: "ease-in-out",
+  //     startEvent: "load"
+  //   });
 
-    const timer = setTimeout(() => {
-      AOS.refreshHard();
-    }, 100);
+  //   const timer = setTimeout(() => {
+  //     AOS.refreshHard();
+  //   }, 100);
 
-    const handleResize = () => AOS.refresh();
-    window.addEventListener("resize", handleResize);
+  //   const handleResize = () => AOS.refresh();
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("resize", handleResize);
-    };
-  }
-    , []);
+  //   return () => {
+  //     clearTimeout(timer);
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }
+  //   , []);
 
   const location = useLocation();
   const navigate = useNavigate();
