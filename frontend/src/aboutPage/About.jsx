@@ -19,7 +19,6 @@ function About() {
 
     return (
         <div className="container-fluid p-0">
-
             <div className="text-white py-5" style={{ backgroundColor: "#1E3A8A" }}>
                 <div className="container">
                     <div className="row align-items-center">

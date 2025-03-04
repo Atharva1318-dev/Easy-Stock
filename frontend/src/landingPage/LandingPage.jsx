@@ -23,17 +23,15 @@ function LandingPage({ username }) {
             duration: 1450,
             once: false,
         })
-    }, [])
-
-
+    }, []);
 
     return (
         <div>
             <HomeHero username={username}></HomeHero>
-            <Ecosystem></Ecosystem>
-            <Pricing></Pricing>
+            <Ecosystem data-aos="fade-up"></Ecosystem>
+            <Pricing data-aos="fade-up"></Pricing>
             {/* <Education imgUrl="../src/assets/education.svg" title="Free and open market education" text="Varsity, the largest online stock market education book in the world covering everything from the basics to advanced trading." links={["Varsity", "TradingQ&A"]}></Education > */}
-            <OpenAccount></OpenAccount>
+            <OpenAccount data-aos="fade-up"></OpenAccount>
         </div>
     );
 }
