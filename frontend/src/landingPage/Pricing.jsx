@@ -2,6 +2,7 @@ import PricingCard from "../Card";
 import PriceBox from "../PriceBox";
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 function Pricing() {
 
