@@ -1,6 +1,16 @@
 import SignUpFreeBtn from "../SignUpFreeBtn";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function OpenAccount() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1450,
+            once: false,
+        })
+    }, []);
+
     return (
         <div className="container" style={{ marginBottom: "5rem" }}>
             <div className="d-flex flex-column justify-content-evenly align-items-center">

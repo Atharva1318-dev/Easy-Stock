@@ -1,7 +1,17 @@
 import PricingCard from "../Card";
 import PriceBox from "../PriceBox";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Pricing() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1450,
+            once: false,
+        })
+    }, []);
+
     return (
         <div className="container" style={{ marginBottom: "5rem" }}>
             <br /><br />

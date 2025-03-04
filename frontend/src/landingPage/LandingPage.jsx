@@ -18,20 +18,14 @@ import Button from '@mui/material/Button';
 // style = {{ background: "linearGradient(-150deg, #7fb6ef 10%, #ffffff 100%) !important" }}
 function LandingPage({ username }) {
 
-    useEffect(() => {
-        AOS.init({
-            duration: 1450,
-            once: false,
-        })
-    }, []);
 
     return (
         <div>
             <HomeHero username={username}></HomeHero>
-            <Ecosystem data-aos="fade-up"></Ecosystem>
-            <Pricing data-aos="fade-up"></Pricing>
+            <Ecosystem></Ecosystem>
+            <Pricing></Pricing>
             {/* <Education imgUrl="../src/assets/education.svg" title="Free and open market education" text="Varsity, the largest online stock market education book in the world covering everything from the basics to advanced trading." links={["Varsity", "TradingQ&A"]}></Education > */}
-            <OpenAccount data-aos="fade-up"></OpenAccount>
+            <OpenAccount></OpenAccount>
         </div>
     );
 }

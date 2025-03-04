@@ -3,6 +3,8 @@ import "./Ecosystem.css";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Ecosystem() {
     const settings = {
@@ -32,6 +34,13 @@ function Ecosystem() {
             },
         ],
     }
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1450,
+            once: false,
+        })
+    }, []);
 
     return (
         <div className="px-1" style={{ marginBottom: "5rem" }}>
