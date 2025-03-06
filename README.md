@@ -11,7 +11,7 @@ Check out the live version of Easy Stock: https://easy-stock-frontend.onrender.c
 ## 🎥 Demo Video
 
 Watch a short video walkthrough of Easy Stock:
-
+https://github.com/user-attachments/assets/ccbe527a-27d2-4210-aa18-86e1b0bc4dae
 
 --
 
