@@ -11,7 +11,7 @@ function Ecosystem() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 7000,
+        speed: 9000,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,

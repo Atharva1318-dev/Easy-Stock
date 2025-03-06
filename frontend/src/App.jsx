@@ -117,7 +117,7 @@ function App() {
         <Navbar username={username} onLogout={Logout} />
       )}
       {/* <Navbar username={username} onLogout={Logout} /> */}
-      <div style={{ background: "linear-gradient(to bottom, #ffffff 0%, #dceeff 135%)", overflowX: "hidden" }}>
+      <div style={{ background: "linear-gradient(to bottom, #ffffff 0%, #dceeff 125%)", overflowX: "hidden" }}>
         <Routes>
           <Route path="/" element={<LandingPage username={username} />}></Route>
           <Route path="/home/*" element={<Dashboard username={username} />}></Route>
