@@ -8,6 +8,14 @@ Check out the live version of Easy Stock: https://easy-stock-frontend.onrender.c
 
 ---
 
+## 🎥 Demo Video
+
+Watch a short video walkthrough of Easy Stock:
+
+
+--
+
+
 ## 📖 Description
 Easy Stock is a lightweight stock trading website designed for users to buy and sell stocks seamlessly. The system stores stock market data in MongoDB and retrieves it dynamically, allowing users to perform operations like placing buy/sell orders, viewing stock details, and managing their holdings.
 
