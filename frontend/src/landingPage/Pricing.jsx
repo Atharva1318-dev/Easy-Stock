@@ -14,7 +14,7 @@ function Pricing() {
     }, []);
 
     return (
-        <div className="container" style={{ marginBottom: "5rem" }} data-aos="fade-up">
+        <div className="container" style={{ marginBottom: "5rem" }}>
             <br /><br />
             <h3 className="text-center" style={{ color: "#1E3A8A" }}>Where Low Brokerage Meets High Opportunity.</h3>
             <div className="row gx-1">

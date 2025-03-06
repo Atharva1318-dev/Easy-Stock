@@ -44,7 +44,7 @@ function Ecosystem() {
     }, []);
 
     return (
-        <div className="px-1" style={{ marginBottom: "5rem" }} data-aos="fade-up">
+        <div className="px-1" style={{ marginBottom: "5rem" }}>
             <h2 className="text-center" style={{ color: "#1E3A8A" }}>Trust with confidence</h2>
             <br />
             <div className="d-flex align-items-center">
