@@ -13,7 +13,7 @@ function OpenAccount() {
     }, []);
 
     return (
-        <div className="container" style={{ marginBottom: "5rem" }} data-aos="fade-up">
+        <div className="container" style={{ marginBottom: "4rem" }} data-aos="fade-up">
             <div className="d-flex flex-column justify-content-evenly align-items-center">
                 <h3 style={{ color: "#1E3A8A" }}>Open a Easy Stock account</h3>
                 <br />

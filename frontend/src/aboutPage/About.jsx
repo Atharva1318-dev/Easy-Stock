@@ -38,7 +38,7 @@ function About() {
             <div className="container py-5">
                 <div className="row g-4">
                     <div className="col-md-6" data-aos="fade-up">
-                        <div className="card h-100 shadow-sm border-0 rounded p-4">
+                        <div className="card h-100 shadow border-0 rounded-4 p-4">
                             <h3 className="fw-bold mb-3">Our Beginning</h3>
                             <p className="text-muted">
                                 We kick-started operations on the 15th of August, 2010 with the goal of breaking all barriers that
@@ -48,7 +48,7 @@ function About() {
                         </div>
                     </div>
                     <div className="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div className="card h-100 shadow-sm border-0 rounded p-4">
+                        <div className="card h-100 shadow border-0 rounded-4 p-4">
                             <h3 className="fw-bold mb-3">Where We Are Today</h3>
                             <p className="text-muted">
                                 Today, our disruptive pricing models and in-house technology have made us the biggest stock broker in
