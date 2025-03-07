@@ -76,7 +76,7 @@ const SplitText = ({
                                     display: 'inline-block',
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word',
-                                    background: 'linear-gradient(35deg, #1e3a8a 0%, #3b82f6 100%)', // ✅ Gradient applied to entire sentence
+                                    background: 'linear-gradient(35deg, #1e3a8a 0%, #3b82f6 100%)',
                                     WebkitBackgroundClip: 'text',
                                     WebkitTextFillColor: 'transparent',
                                     willChange: 'transform, opacity',

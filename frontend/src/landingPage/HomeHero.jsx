@@ -33,7 +33,7 @@ export default function HomeHero({ username }) {
         <div className="HomeHero container-fluid px-0 mt-2 mt-md-1 mb-5">
             <div className="row g-0 align-items-center">
                 {/* Text Content Column */}
-                <div className="col-12 col-lg-4 order-2 order-lg-1" style={{ padding: "0 0.045rem 0 0.05rem" }}>
+                <div className="col-12 col-lg-4 order-2 order-lg-1" style={{ padding: "0 0.025rem 0 0.05rem" }}>
                     <div className="px-1 px-md-0 py-4 py-md-5">
                         <SplitText
                             text="Seamless Trading Platform"
@@ -46,8 +46,8 @@ export default function HomeHero({ username }) {
                             rootMargin="-50px"
                             onLetterAnimationComplete={handleAnimationComplete}
                         />
-                        <br />
-                        <div className="mb-4">
+                        <br /><br /><br />
+                        <div className="mb-4 mt-3">
                             <span className="fs-5 fs-md-4" style={{ color: "#7fb6ef" }} ref={taglineRef}></span>
                         </div>
 
