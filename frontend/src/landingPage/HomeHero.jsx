@@ -46,7 +46,7 @@ export default function HomeHero({ username }) {
                             rootMargin="-50px"
                             onLetterAnimationComplete={handleAnimationComplete}
                         />
-
+                        <br />
                         <div className="mb-4">
                             <span className="fs-5 fs-md-4" style={{ color: "#7fb6ef" }} ref={taglineRef}></span>
                         </div>
