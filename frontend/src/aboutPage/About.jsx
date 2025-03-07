@@ -133,7 +133,7 @@ function About() {
                     </h2>
                     <div className="row justify-content-center">
                         <div className="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-                            <div className="card border-0 shadow rounded-5" style={{ background: "linear-gradient(-35deg, #dceeff 1 %, #ffffff)" }}>
+                            <div className="card border-0 shadow rounded-5" style={{ background: "linear-gradient(-35deg, #dceeff 1%, #ffffff) !important" }}>
                                 <div className="card-body text-center p-5">
                                     <div className="position-relative d-inline-block mb-4">
                                         <div className="rotating-border"></div>
