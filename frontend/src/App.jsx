@@ -103,7 +103,7 @@ function App() {
           src="https://lottie.host/ca9c5f62-b1bc-489b-8805-4cbcfe412a42/XxgzHTt9xE.lottie"
           loop
           autoplay
-          style={{ width: "290px", height: "290px" }}
+          style={{ width: "260px", height: "260px" }}
         />
       </div>
     );
