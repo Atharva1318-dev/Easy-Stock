@@ -33,11 +33,11 @@ export default function HomeHero({ username }) {
         <div className="HomeHero container-fluid px-0 mt-2 mt-md-1 mb-5">
             <div className="row g-0 align-items-center">
                 {/* Text Content Column */}
-                <div className="col-12 col-lg-4 order-2 order-lg-1" style={{ padding: "0 0.025rem 0 0.05rem" }}>
+                <div className="col-12 col-lg-4 order-2 order-lg-1 px-1" style={{ padding: "0 0.025rem 0 0.05rem" }}>
                     <div className="px-1 px-md-0 py-4 py-md-5">
                         <SplitText
                             text="Seamless Trading Platform"
-                            className="text-2xl display-5 fw-bold text-center"
+                            className="text-2xl display-5 fw-bold text-center mainHeading"
                             delay={150}
                             animationFrom={{ opacity: 0, transform: 'translate3d(0,-50px,0)' }}
                             animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
