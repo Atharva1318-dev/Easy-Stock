@@ -5,8 +5,14 @@ import Typed from "typed.js"
 import { Link } from "react-router-dom"
 import "./HomeHero.css"
 import Dashboard from '../Dashboard/Home';
+import SplitText from "./SplitText";
 
 export default function HomeHero({ username }) {
+
+    const handleAnimationComplete = () => {
+        console.log('All letters have animated!');
+    };
+
     console.log({ username });
     const taglineRef = useRef(null)
 
@@ -29,12 +35,17 @@ export default function HomeHero({ username }) {
                 {/* Text Content Column */}
                 <div className="col-12 col-lg-4 order-2 order-lg-1" style={{ padding: "0 0.045rem 0 0.05rem" }}>
                     <div className="px-1 px-md-0 py-4 py-md-5">
-                        <h1 className="focus-in-expand display-5 fw-bold text-start mb-4 mainHeading">
-                            <b>
-                                Seamless&nbsp;Trading <br />
-                                Platform
-                            </b>
-                        </h1>
+                        <SplitText
+                            text="Seamless Trading Platform"
+                            className="text-2xl display-5 fw-bold text-center"
+                            delay={150}
+                            animationFrom={{ opacity: 0, transform: 'translate3d(0,-50px,0)' }}
+                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                            easing="easeOutCubic"
+                            threshold={0.2}
+                            rootMargin="-50px"
+                            onLetterAnimationComplete={handleAnimationComplete}
+                        />
 
                         <div className="mb-4">
                             <span className="fs-5 fs-md-4" style={{ color: "#7fb6ef" }} ref={taglineRef}></span>
