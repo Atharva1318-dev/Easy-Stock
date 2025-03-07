@@ -98,11 +98,12 @@ function App() {
 
   if (loading) {
     return (
-      <div className="mx-auto mt-auto" style={{ maxWidth: "500px", maxHeight: "500px" }}>
+      <div className="flex justify-center items-center h-screen">
         <DotLottieReact
           src="https://lottie.host/ca9c5f62-b1bc-489b-8805-4cbcfe412a42/XxgzHTt9xE.lottie"
           loop
           autoplay
+          style={{ width: "360px", height: "360px" }}
         />
       </div>
     );
