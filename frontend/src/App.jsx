@@ -98,7 +98,7 @@ function App() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="d-flex justify-content-center align-items-center vh-100">
         <DotLottieReact
           src="https://lottie.host/ca9c5f62-b1bc-489b-8805-4cbcfe412a42/XxgzHTt9xE.lottie"
           loop
