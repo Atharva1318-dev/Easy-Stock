@@ -82,16 +82,16 @@
 
 @media(max-width:530px){
 .mainHeading{
-  font-size:0.32rem;
+  font-size:1.78rem;
 }
 }
 
-@media (max-width: 576px) {
+@media(min-width:530px) and (max-width: 576px) {
   .display-4 {
     font-size: 2rem;
   }
-.mainHeading{
-  font-size:0.65rem;
+  .mainHeading{
+  font-size:1.95rem;
 }
 }
 
