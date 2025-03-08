@@ -16,7 +16,7 @@ function OpenAccount() {
     return (
         <div className="container" style={{ marginBottom: "4rem" }}>
             <div className="d-flex flex-column justify-content-evenly align-items-center">
-                <h1 style={{ color: "#1E3A8A" }}>Open a Easy Stock account</h1>
+                <h2 style={{ color: "#1E3A8A" }}>Open a Easy Stock account</h2>
                 <br />
                 <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
                 <br />
