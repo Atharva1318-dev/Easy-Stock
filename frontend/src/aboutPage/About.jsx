@@ -19,19 +19,48 @@ function About() {
 
     return (
         <div className="container-fluid p-0">
-            <div className="text-white py-5" style={{ backgroundColor: "#1E3A8A" }}>
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6" data-aos="fade-right">
-                            <h1 className="display-4 fw-bold mb-4">We pioneered the discount broking model in India.</h1>
-                            <p className="lead">Now, we are breaking ground with our technology.</p>
-                        </div>
-                        <div className="col-lg-6" data-aos="fade-left">
-                            <div className="w-100" style={{ maxWidth: "500px", margin: "0 auto" }}>
-                                {/* <Lottie animationData={tradingAnimation} loop={true} /> */}
-                            </div>
-                        </div>
-                    </div>
+            <div className="position-relative w-100 py-5 py-md-7 overflow-hidden" style={{ backgroundColor: "#1E3A8A", color: "white" }}>
+                {/* Background SVG patterns */}
+                <div className="position-absolute top-0 start-0 end-0 bottom-0" style={{ opacity: 0.1 }}>
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="1" />
+                        </pattern>
+                        <rect width="100%" height="100%" fill="url(#grid)" />
+                    </svg>
+                </div>
+
+                {/* Floating financial icons */}
+                <div className="position-absolute top-0 end-0 mt-4 me-4" style={{ opacity: 0.2 }}>
+                    <TrendingUp size={80} />
+                </div>
+                <div className="position-absolute bottom-0 start-0 mb-4 ms-4" style={{ opacity: 0.2 }}>
+                    <BarChart2 size={60} />
+                </div>
+                <div className="position-absolute" style={{ top: "25%", left: "25%", opacity: 0.15 }}>
+                    <PieChart size={50} />
+                </div>
+                <div className="position-absolute" style={{ bottom: "25%", right: "25%", opacity: 0.15 }}>
+                    <Activity size={70} />
+                </div>
+
+                {/* Animated line chart SVG */}
+                <div className="position-absolute bottom-0 start-0 w-100" style={{ height: "80px", opacity: 0.3 }}>
+                    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-100 h-100">
+                        <path
+                            d="M0,80 C150,20 350,100 500,60 C650,20 800,80 950,40 C1050,10 1150,50 1200,30 L1200,120 L0,120 Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+
+                <div className="container position-relative px-3" style={{ zIndex: 10 }}>
+                    <h1 className="display-3 fw-bold mb-4" style={{ maxWidth: "900px" }}>
+                        We pioneered the discount broking model in India.
+                    </h1>
+                    <p className="fs-3" style={{ maxWidth: "600px" }}>
+                        Now, we are breaking ground with our technology.
+                    </p>
                 </div>
             </div>
 
