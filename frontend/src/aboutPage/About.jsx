@@ -42,8 +42,7 @@ function About() {
                             <h3 className="fw-bold mb-3">Our Beginning</h3>
                             <p className="text-muted">
                                 We kick-started operations on the 15th of August, 2010 with the goal of breaking all barriers that
-                                traders and investors face in India in terms of cost, support, and technology. We named the company Easy
-                                Stock, a combination of Zero and 'Rodha', the Sanskrit word for barrier.
+                                traders and investors face in India in terms of cost, support, and technology.
                             </p>
                         </div>
                     </div>
@@ -133,7 +132,7 @@ function About() {
                     </h2>
                     <div className="row justify-content-center">
                         <div className="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-                            <div className="card border-0 shadow rounded-5" style={{ background:"linear-gradient(-35deg, #dceeff 1%, #ffffff)" }}>
+                            <div className="card border-0 shadow rounded-5" style={{ background: "linear-gradient(-35deg, #dceeff 1%, #ffffff)" }}>
                                 <div className="card-body text-center p-5">
                                     <div className="position-relative d-inline-block mb-4">
                                         <div className="rotating-border"></div>

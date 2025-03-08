@@ -50,7 +50,7 @@ export default function HomeHero({ username }) {
                         <div className="mb-4 mt-1">
                             <span className="fs-5 fs-md-4" style={{ color: "#7fb6ef" }} ref={taglineRef}></span>
                         </div>
-
+                        <br />
                         <p className="text-muted lead mb-4">
                             Welcome to EasyStock, the simplest way to buy and sell stocks. Our platform is designed for beginners,
                             offering a seamless trading experience. Invest with confidence, and grow your wealth
