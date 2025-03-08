@@ -3,6 +3,7 @@
 // import AboutPeople from "./AboutPeople";
 import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { TrendingUp, BarChart2, PieChart, Activity } from "lucide-react";
 import { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
