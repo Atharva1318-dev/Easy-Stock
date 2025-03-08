@@ -80,9 +80,9 @@
   }
 }
 
-@media(max-with:530px){
+@media(max-width:530px){
 .mainHeading{
-  font-size:0.4rem;
+  font-size:0.32rem;
 }
 }
 
