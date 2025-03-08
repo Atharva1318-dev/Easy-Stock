@@ -70,15 +70,17 @@ export default function HomeHero({ username }) {
                                 Go to Dashboard
                             </Link>
                         ) : (
-                            <button
+                            <Link
+                                to="/signup"
                                 className="btn btn-lg px-4 py-2"
                                 style={{
                                     backgroundColor: "#1E3A8A",
                                     color: "#7fb6ef",
+                                    textDecoration: "none",
                                 }}
                             >
                                 Signup for free
-                            </button>
+                            </Link>
                         )}
                     </div>
                 </div>

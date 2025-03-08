@@ -45,7 +45,7 @@ function Ecosystem() {
 
     return (
         <div className="px-1" style={{ marginBottom: "5rem" }}>
-            <h2 className="text-center" style={{ color: "#1E3A8A" }}>Trust with confidence</h2>
+            <h1 className="text-center" style={{ color: "#1E3A8A" }}>Trust with confidence</h1>
             <br />
             <div className="d-flex align-items-center">
                 <Slider {...settings}>

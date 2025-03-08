@@ -16,7 +16,7 @@ function Pricing() {
     return (
         <div className="container" style={{ marginBottom: "5rem" }}>
             <br /><br />
-            <h2 className="text-center" style={{ color: "#1E3A8A" }}>Where Low Brokerage Meets High Opportunity.</h2>
+            <h1 className="text-center" style={{ color: "#1E3A8A" }}>Where Low Brokerage Meets High Opportunity.</h1>
             <div className="row gx-1">
                 <div className="col-12 col-md-7 d-flex justify-content-evenly align-items-center">
                     <PriceBox src="https://res.cloudinary.com/dkpgnq7ym/image/upload/v1740321725/pricing0_i1fexl.svg" text="free account"></PriceBox>
