@@ -29,27 +29,6 @@ function App() {
   const [loading, setLoading] = useState(true);
 
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1450,
-  //     easing: "ease-in-out",
-  //     startEvent: "load"
-  //   });
-
-  //   const timer = setTimeout(() => {
-  //     AOS.refreshHard();
-  //   }, 100);
-
-  //   const handleResize = () => AOS.refresh();
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     clearTimeout(timer);
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }
-  //   , []);
-
   const location = useLocation();
   const navigate = useNavigate();
   const [cookies, removeCookie] = useCookies([]);
@@ -71,10 +50,10 @@ function App() {
         console.log("API response:", data);
         if (status) {
           setUsername(user);
-          // You can show a toast or perform other actions here.
+
         } else {
           removeCookie("token");
-          setUsername(""); // Clear user state if token is invalid.
+          setUsername("");
         }
       } catch (err) {
         console.error("Error verifying cookie:", err);

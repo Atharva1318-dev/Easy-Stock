@@ -21,7 +21,7 @@ function About() {
     return (
         <div className="container-fluid p-0">
             <div className="position-relative w-100 py-5 py-md-7 overflow-hidden" style={{ backgroundColor: "#1E3A8A", color: "white" }}>
-                {/* Background SVG patterns */}
+
                 <div className="position-absolute top-0 start-0 end-0 bottom-0" style={{ opacity: 0.1 }}>
                     <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
                         <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -31,7 +31,7 @@ function About() {
                     </svg>
                 </div>
 
-                {/* Floating financial icons */}
+
                 <div className="position-absolute top-0 end-0 mt-4 me-4" style={{ opacity: 0.2 }}>
                     <TrendingUp size={80} />
                 </div>
@@ -45,7 +45,7 @@ function About() {
                     <Activity size={70} />
                 </div>
 
-                {/* Animated line chart SVG */}
+
                 <div className="position-absolute bottom-0 start-0 w-100" style={{ height: "80px", opacity: 0.3 }}>
                     <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-100 h-100">
                         <path
@@ -55,7 +55,7 @@ function About() {
                     </svg>
                 </div>
 
-                <div className="container position-relative px-3" style={{ zIndex: 10 }}>
+                <div className="container position-relative px-3" data-aos="fade-right" style={{ zIndex: 10 }}>
                     <h1 className="display-3 fw-bold mb-4" style={{ maxWidth: "900px" }}>
                         We pioneered the discount broking model in India.
                     </h1>
